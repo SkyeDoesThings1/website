@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+@theme {
+    --font-sans:
+        var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+        "Noto Color Emoji";
+    --color-pink: #f5a3dd;
+    --color-pink-2: #ff69b4;
+    --animate-wave: wave 1s infinite ease-in-out;
+    --animate-rainbow-text: rainbow 5s infinite;
+    --animate-marquee: marquee 20s linear infinite;
+
+    @keyframes wave {
+        0%,
+        100% {
+            transform: rotate(0deg);
+        }
+        50% {
+            transform: rotate(20deg);
+        }
+    }
+
+    @keyframes marquee {
+        0% {
+            transform: translateX(100%);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+
+    @keyframes rainbow {
+        0% {
+            color: red;
+        }
+        14% {
+            color: orange;
+        }
+        28% {
+            color: yellow;
+        }
+        42% {
+            color: green;
+        }
+        56% {
+            color: blue;
+        }
+        70% {
+            color: indigo;
+        }
+        84% {
+            color: violet;
+        }
+        100% {
+            color: red;
+        }
+    }
+}
+
+body {
+    background: #000;
+    cursor: url(../img/cursor_1.png), auto;
+    animation: bgScroll 15s infinite linear;
+    background-image: url(../img/stars.gif);
+    background-repeat: repeat;
+}
+
+@keyframes bgScroll {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 304px 234px;
+    }
+}
+
+.glitter-text {
+    text-shadow:
+        0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 15px #fff,
+        0 0 20px #ff69b4,
+        0 0 35px #ff69b4;
+}
+
+.pixel-border {
+    border-style: solid;
+    border-width: 3px;
+    border-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAIElEQVQIW2NkQAOMjIz/GWEMiBhjBYxwBaOYAQYGBgYAP1YEBy0axsYAAAAASUVORK5CYII=")
+        1 repeat;
+}
