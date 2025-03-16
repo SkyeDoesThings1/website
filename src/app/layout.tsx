@@ -6,6 +6,7 @@ import { Analytics } from "@vercel/analytics/next";
 import { type Metadata } from "next";
 import PlausibleProvider from "next-plausible";
 import "@/assets/styles/globals.css";
+import Script from "next/script";
 
 const fredoka = Fredoka({
     preload: true,
@@ -26,7 +27,7 @@ export const metadata: Metadata = {
         title: "⋆｡°✩ ♥ skye's site ♥ ✩°｡⋆",
         images: [
             {
-                url: "/og.png",
+                url: "/og/og.png",
                 alt: "Angry Asuka eating in space cause why not !!",
             },
         ],
@@ -37,7 +38,7 @@ export const metadata: Metadata = {
         creator: "@SkyeDoes_aThing",
         images: [
             {
-                url: "/og.png",
+                url: "/og/og.png",
                 alt: "Angry Asuka eating in space cause why not !!",
             },
         ],
@@ -88,6 +89,20 @@ const RootLayout = ({
             selfHosted
         >
             <html lang="en">
+                <head>
+                    <Script
+                        defer
+                        src="https://static.cloudflareinsights.com/beacon.min.js"
+                        data-cf-beacon='{"token": "39338d24aaef47859087a8dc0a525b2c"}'
+                        strategy="afterInteractive"
+                    />
+                    <script
+                        type="application/ld+json"
+                        dangerouslySetInnerHTML={{
+                            __html: JSON.stringify(jsonLd),
+                        }}
+                    />
+                </head>
                 <body
                     className={`${fredoka.className} selection:bg-pink-2 min-h-screen font-semibold text-white antialiased selection:text-white`}
                 >
@@ -116,12 +131,7 @@ const RootLayout = ({
                         </Providers>
                     </div>
                     <Oneko />
-                    <script
-                        type="application/ld+json"
-                        dangerouslySetInnerHTML={{
-                            __html: JSON.stringify(jsonLd),
-                        }}
-                    />
+                    <Script src="/js/sparkle.js" strategy="beforeInteractive" />
                 </body>
                 <Analytics />
             </html>
