@@ -1,8 +1,8 @@
 import { Fredoka } from "next/font/google";
-import { TopBar } from "@/components/TopBar";
-import { Analytics } from "@vercel/analytics/next";
 import { Providers } from "@/components/Providers";
+import { TopBar } from "@/components/TopBar";
 import { Oneko } from "@/components/Oneko";
+import { Analytics } from "@vercel/analytics/next";
 import { type Metadata } from "next";
 import PlausibleProvider from "next-plausible";
 import "@/assets/styles/globals.css";

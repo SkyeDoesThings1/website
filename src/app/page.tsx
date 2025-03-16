@@ -1,5 +1,5 @@
-import { ViewCount } from "@/components/ViewCount";
 import { AnimatedTitle } from "@/components/AnimatedTitle";
+import { ViewCount } from "@/components/ViewCount";
 import Image from "next/image";
 import miku from "@/assets/img/miku3.gif";
 import miku2 from "@/assets/img/mikum.gif";
