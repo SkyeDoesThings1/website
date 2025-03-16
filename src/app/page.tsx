@@ -4,8 +4,8 @@ import Image from "next/image";
 import miku from "@/assets/img/miku3.gif";
 import miku2 from "@/assets/img/mikum.gif";
 import anyBrowser from "@/assets/img/any.png";
-import faggotFlags from "@/assets/img/faggot.png";
-import trannyRights from "@/assets/img/trannyrights.png";
+import gayFlags from "@/assets/img/gayflags.png";
+import transRights from "@/assets/img/transrights.png";
 import nazisAreBad from "@/assets/img/nazisarebad.png";
 import aiSucks from "@/assets/img/imageandvideoaisucks.gif";
 import asuka from "@/assets/img/asuka.gif";
@@ -120,7 +120,7 @@ const HomePage = (): React.ReactElement => {
                                 className="inline-block hover:m-[-1px] hover:border hover:border-white"
                             >
                                 <Image
-                                    src={faggotFlags}
+                                    src={gayFlags}
                                     alt="my fag flags"
                                     width={88}
                                     height={31}
@@ -137,7 +137,7 @@ const HomePage = (): React.ReactElement => {
                                 className="inline-block hover:m-[-1px] hover:border hover:border-white"
                             >
                                 <Image
-                                    src={trannyRights}
+                                    src={transRights}
                                     alt="TRANS RIGHTS !!!!!!"
                                     width={88}
                                     height={31}
