@@ -16,6 +16,11 @@ const nextConfig: NextConfig = {
                 hostname: "i.scdn.co",
                 pathname: "/image/**",
             },
+            {
+                protocol: "https",
+                hostname: "lastfm.freetls.fastly.net",
+                pathname: "/i/u/300x300/**",
+            },
         ],
     },
     redirects: async () => {
