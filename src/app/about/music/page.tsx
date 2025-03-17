@@ -1,6 +1,8 @@
 import { env } from "@/env";
-import Image from "next/image";
 import { AnimatedTitle } from "@/components/AnimatedTitle";
+import Image from "next/image";
+
+export const dynamic = "force-dynamic";
 
 interface Track {
     name: string;
