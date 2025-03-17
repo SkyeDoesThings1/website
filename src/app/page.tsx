@@ -46,13 +46,34 @@ const HomePage = (): React.ReactElement => {
                     </p>
                 </section>
 
-                <section className="space-y-4">
-                    <h1 className="text-3xl font-bold">hobbies</h1>
-                    <ul className="list-disc space-y-2 pl-5">
-                        <li>programming</li>
-                        <li>anime</li>
-                        <li>music</li>
+                <section className="space-y-4 rounded-xl bg-pink-500/10 p-6">
+                    <h1 className="mb-6 text-center text-3xl font-bold">
+                        ✨ hobbies ✨
+                    </h1>
+                    <ul className="grid grid-cols-1 gap-4 md:grid-cols-3">
+                        <li className="flex items-center space-x-2 rounded-lg bg-white/10 p-4 backdrop-blur-sm">
+                            <span className="text-2xl">💻</span>
+                            <span>programming</span>
+                        </li>
+                        <li className="flex items-center space-x-2 rounded-lg bg-white/10 p-4 backdrop-blur-sm">
+                            <span className="text-2xl">🎌</span>
+                            <span>anime</span>
+                        </li>
+                        <li className="flex items-center space-x-2 rounded-lg bg-white/10 p-4 backdrop-blur-sm">
+                            <span className="text-2xl">🎵</span>
+                            <span>music</span>
+                        </li>
                     </ul>
+                </section>
+
+                <section className="flex justify-center">
+                    <iframe
+                        width="314"
+                        height="321"
+                        scrolling="no"
+                        src="https://gifypet.neocities.org/pet/pet.html?name=Sylvie&dob=1742198843&gender=f&element=Air&pet=https%3A%2F%2Fimages-wixmp-ed30a86b8c4ca887773594c2.wixmp.com%2Ff%2Fe57c0ca5-c162-43e7-b0dc-40f215c30321%2Fdg5zzve-0a3e38cd-c3c7-4290-aed5-f4bb01860b0a.gif%3Ftoken%3DeyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2U1N2MwY2E1LWMxNjItNDNlNy1iMGRjLTQwZjIxNWMzMDMyMVwvZGc1enp2ZS0wYTNlMzhjZC1jM2M3LTQyOTAtYWVkNS1mNGJiMDE4NjBiMGEuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.p5FPj6o0MJwwg0OvYDXu97b9ke420SGr_T29Pbb03Vk&map=tree.jpg&background=paper.jpg&tablecolor=%23ffaddd&textcolor=black"
+                        frameBorder={0}
+                    ></iframe>
                 </section>
 
                 <section className="space-y-12">
