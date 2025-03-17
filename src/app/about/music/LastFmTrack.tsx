@@ -27,21 +27,33 @@ export const LastFmTrackDisplay = (): React.ReactElement | null => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        const fetchLastTrack = async (): Promise<void> => {
+        const fetchLastTrack = async (initialFetch = false): Promise<void> => {
             try {
                 const res = await fetch(
                     "https://lastfm-last-played.biancarosa.com.br/skyedoesthings1/latest-song",
                 );
                 const data = await res.json();
-                setLastTrack(data.track);
-            } catch (error) {
+                setLastTrack((prev) => {
+                    if (
+                        initialFetch ||
+                        JSON.stringify(data.track) !== JSON.stringify(prev)
+                    ) {
+                        return data.track;
+                    }
+                    return prev;
+                });
+            } catch (error: unknown) {
                 console.error("Failed to fetch LastFM track:", error);
             } finally {
-                setLoading(false);
+                if (initialFetch) setLoading(false);
             }
         };
 
-        fetchLastTrack();
+        fetchLastTrack(true);
+
+        const interval = setInterval(() => fetchLastTrack(false), 30000);
+
+        return (): void => clearInterval(interval);
     }, []);
 
     if (loading)
