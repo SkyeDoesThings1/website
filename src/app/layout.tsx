@@ -1,19 +1,12 @@
-import { Fredoka } from "next/font/google";
+import { fredoka } from "@/assets/fonts";
 import { Providers } from "@/components/Providers";
 import { TopBar } from "@/components/TopBar";
 import { Oneko } from "@/components/Oneko";
 import { Analytics } from "@vercel/analytics/next";
 import { type Metadata } from "next";
 import PlausibleProvider from "next-plausible";
-import "@/assets/styles/globals.css";
 import Script from "next/script";
-
-const fredoka = Fredoka({
-    preload: true,
-    display: "swap",
-    subsets: ["latin"],
-    weight: ["500"],
-});
+import "@/assets/styles/globals.css";
 
 export const metadata: Metadata = {
     metadataBase: new URL("https://skyler.lol"),
@@ -115,12 +108,12 @@ const RootLayout = ({
                                     ✨ ty for visiting my site ^^ ✨
                                 </p>
                             </div>
-                            <main className="mx-auto mt-4 max-w-3xl rounded-lg border border-pink-500/45 bg-black/50 px-6 py-12 backdrop-blur-sm">
+                            <main className="mx-auto mt-4 w-[95%] rounded-lg border border-pink-500/45 bg-black/50 px-4 py-8 backdrop-blur-sm md:max-w-3xl md:px-6 md:py-12">
                                 {children}
                             </main>
-                            <footer className="py-4 text-center">
+                            <footer className="px-4 py-4 text-center md:px-0">
                                 <div className="space-y-2 text-sm">
-                                    <p className="text-pink-2">
+                                    <p className="animate-rainbow-text">
                                         ♥ Made with love by SkyeDoesThings1 ♥
                                     </p>
                                     <p className="text-gray-500">

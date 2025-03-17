@@ -1,14 +1,7 @@
 "use client";
 
 import { useQuery } from "@tanstack/react-query";
-import { Geist_Mono } from "next/font/google";
-
-const geist = Geist_Mono({
-    preload: true,
-    display: "swap",
-    subsets: ["latin"],
-    weight: ["400", "500", "600"], // Add more weights for flexibility
-});
+import { geist } from "@/assets/fonts";
 
 export const ViewCount = (): React.ReactElement => {
     const { data, isLoading } = useQuery({

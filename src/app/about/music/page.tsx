@@ -1,5 +1,6 @@
 import { env } from "@/env";
 import { AnimatedTitle } from "@/components/AnimatedTitle";
+import { geist } from "@/assets/fonts";
 import Image from "next/image";
 
 interface Track {
@@ -31,8 +32,11 @@ const MusicPage = async (): Promise<React.ReactElement> => {
             <div className="space-y-12">
                 <section className="space-y-6 text-center">
                     <h1 className="glitter-text text-4xl font-bold">
-                        ⋆｡°✩ my music ✩°｡⋆
+                        ⋆｡°✩ music ✩°｡⋆
                     </h1>
+                    <p className="pixel-border animate-rainbow-text rounded-lg p-4 text-lg">
+                        music u should like totally listen to :3
+                    </p>
                 </section>
 
                 <div className="pixel-border rounded-lg bg-pink-500/10">
@@ -61,11 +65,15 @@ const MusicPage = async (): Promise<React.ReactElement> => {
                                 <h2 className="text-base font-medium">
                                     {track.name}
                                 </h2>
-                                <p className="text-sm text-neutral-400">
+                                <p
+                                    className={`${geist.className} text-sm text-neutral-400`}
+                                >
                                     {track.artists}
                                 </p>
                             </div>
-                            <span className="text-sm text-neutral-500">
+                            <span
+                                className={`${geist.className} text-sm text-neutral-500`}
+                            >
                                 {track.length}
                             </span>
                         </a>
