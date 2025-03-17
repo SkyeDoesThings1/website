@@ -11,6 +11,8 @@ import aiSucks from "@/assets/img/imageandvideoaisucks.gif";
 import asuka from "@/assets/img/asuka.gif";
 import asuka2 from "@/assets/img/asuka2.gif";
 import aero from "@/assets/img/aero.png";
+import aioi from "@/assets/img/aioi.gif";
+import wifi from "@/assets/img/wifi.gif";
 
 const HomePage = (): React.ReactElement => {
     const today = new Date();
@@ -226,6 +228,41 @@ const HomePage = (): React.ReactElement => {
                             >
                                 <Image
                                     src={aero}
+                                    alt="frutiger aero archive"
+                                    width={88}
+                                    height={31}
+                                    className="border border-gray-300 shadow-md"
+                                />
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://aioi.neocities.org/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="Visit where the badge is from"
+                                className="inline-block hover:m-[-1px] hover:border hover:border-white"
+                            >
+                                <Image
+                                    src={aioi}
+                                    alt="frutiger aero archive"
+                                    width={88}
+                                    height={31}
+                                    className="border border-gray-300 shadow-md"
+                                    unoptimized
+                                />
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://wi-fi.neocities.org/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="Visit where the badge is from"
+                                className="inline-block hover:m-[-1px] hover:border hover:border-white"
+                            >
+                                <Image
+                                    src={wifi}
                                     alt="frutiger aero archive"
                                     width={88}
                                     height={31}
