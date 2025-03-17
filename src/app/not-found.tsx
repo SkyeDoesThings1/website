@@ -5,7 +5,7 @@ const NotFoundPage: React.FC = () => {
                 <h1 className="glitter-text text-8xl font-bold">404</h1>
                 <div className="pixel-border rounded-lg bg-pink-500/10 p-6">
                     <h2 className="text-xl">
-                        ｡°(´∩ω∩｀)°｡ oops! this page couldn&apos;t be found
+                        oops! this page couldn&apos;t be found
                     </h2>
                     <p className="animate-rainbow-text mt-2">
                         maybe try going back to the home page?

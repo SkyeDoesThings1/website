@@ -84,6 +84,14 @@ body {
         0 0 35px #ff69b4;
 }
 
+@media (max-width: 768px) {
+    .glitter-text {
+        text-shadow:
+            0 0 2px #fff,
+            0 0 4px #ff69b4;
+    }
+}
+
 .pixel-border {
     border-style: solid;
     border-width: 3px;

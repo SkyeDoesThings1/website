@@ -11,6 +11,11 @@ const nextConfig: NextConfig = {
                 hostname: "mii-unsecure.ariankordi.net",
                 pathname: "/miis/image.png",
             },
+            {
+                protocol: "https",
+                hostname: "i.scdn.co",
+                pathname: "/image/**",
+            },
         ],
     },
     redirects: async () => {

@@ -20,22 +20,30 @@ export const TopBar = (): React.ReactElement => {
                 </Link>
                 <Link
                     href="/blog"
-                    className={pathname === "/blog" ? "text-pink" : ""}
-                    aria-current={pathname === "/blog" ? "page" : undefined}
+                    className={pathname.startsWith("/blog") ? "text-pink" : ""}
+                    aria-current={
+                        pathname.startsWith("/blog") ? "page" : undefined
+                    }
                 >
                     Blog
                 </Link>
                 <Link
                     href="/projects"
-                    className={pathname === "/projects" ? "text-pink" : ""}
-                    aria-current={pathname === "/projects" ? "page" : undefined}
+                    className={
+                        pathname.startsWith("/projects") ? "text-pink" : ""
+                    }
+                    aria-current={
+                        pathname.startsWith("/projects") ? "page" : undefined
+                    }
                 >
                     Projects
                 </Link>
                 <Link
                     href="/about"
-                    className={pathname === "/about" ? "text-pink" : ""}
-                    aria-current={pathname === "/about" ? "page" : undefined}
+                    className={pathname.startsWith("/about") ? "text-pink" : ""}
+                    aria-current={
+                        pathname.startsWith("/about") ? "page" : undefined
+                    }
                 >
                     About
                 </Link>
