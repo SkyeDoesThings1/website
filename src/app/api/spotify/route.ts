@@ -9,7 +9,7 @@ const clientSecret = env.SPOTIFY_CLIENT_SECRET;
 const playlistId = env.SPOTIFY_PLAYLIST_ID;
 
 const CACHE_KEY = "spotify_playlist_tracks";
-const CACHE_DURATION = 60 * 60 * 48; // 48 hours in seconds
+const CACHE_DURATION = 60 * 25;
 
 interface SpotifyTokenResponse {
     access_token: string;
