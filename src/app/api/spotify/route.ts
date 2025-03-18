@@ -1,6 +1,6 @@
 import { env } from "@/env";
 import { NextResponse } from "next/server";
-import { redis } from "@/lib/redis";
+import { redis } from "@/utils/redis";
 
 export const dynamic = "force-dynamic";
 

@@ -11,5 +11,5 @@ export const geist = Geist_Mono({
     preload: true,
     display: "swap",
     subsets: ["latin"],
-    weight: ["400", "500", "600"], // Add more weights for flexibility
+    weight: ["400", "500", "600"],
 });

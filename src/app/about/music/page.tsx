@@ -1,8 +1,8 @@
 import { env } from "@/env";
 import { AnimatedTitle } from "@/components/AnimatedTitle";
 import { geist } from "@/assets/fonts";
+import { LastFmTrackDisplay } from "./components/LastFmTrack";
 import Image from "next/image";
-import { LastFmTrackDisplay } from "./LastFmTrack";
 
 interface Track {
     name: string;
@@ -10,6 +10,8 @@ interface Track {
     artists: string;
     cover: string;
 }
+
+export const dynamic = "force-dynamic";
 
 const getSpotifySearchUrl = (name: string, artists: string): string => {
     const query = encodeURIComponent(`${name} ${artists}`);
@@ -50,7 +52,7 @@ const MusicPage = async (): Promise<React.ReactElement> => {
                         key={`${track.name}-${track.artists}-${index}`}
                         className="flex cursor-pointer items-center border-b border-neutral-800 px-4 py-3 transition-colors hover:bg-neutral-800"
                     >
-                        <span className="w-8 text-sm text-neutral-500">
+                        <span className="min-w-[2rem] text-sm text-neutral-500">
                             {index + 1}
                         </span>
                         <Image
@@ -60,18 +62,18 @@ const MusicPage = async (): Promise<React.ReactElement> => {
                             width={48}
                             height={48}
                         />
-                        <div className="ml-4 flex-grow">
-                            <h2 className="text-base font-medium">
+                        <div className="ml-4 min-w-0 flex-grow">
+                            <h2 className="truncate text-base font-medium">
                                 {track.name}
                             </h2>
                             <p
-                                className={`${geist.className} text-sm text-neutral-400`}
+                                className={`${geist.className} truncate text-sm text-neutral-400`}
                             >
                                 {track.artists}
                             </p>
                         </div>
                         <span
-                            className={`${geist.className} text-sm text-neutral-500`}
+                            className={`${geist.className} ml-4 text-sm whitespace-nowrap text-neutral-500`}
                         >
                             {track.length}
                         </span>

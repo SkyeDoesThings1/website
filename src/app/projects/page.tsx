@@ -38,7 +38,7 @@ const ProjectsPage = (): React.ReactElement => {
                             </p>
                         </div>
                     </Link>
-                    <Link href="/projects/chat" target="_blank">
+                    <Link href="/projects/chat">
                         <div className="rounded-lg border border-pink-500/45 bg-black/30 p-6 transition-all hover:scale-[1.02] hover:border-pink-500 hover:bg-pink-500/10">
                             <h3 className="text-pink-2 text-xl font-bold">
                                 Chat room

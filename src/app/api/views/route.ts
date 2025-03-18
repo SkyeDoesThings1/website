@@ -1,4 +1,4 @@
-import { redis } from "@/lib/redis";
+import { redis } from "@/utils/redis";
 import { NextResponse } from "next/server";
 
 export const GET = async (): Promise<NextResponse> => {
