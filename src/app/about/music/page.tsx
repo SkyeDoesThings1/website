@@ -48,7 +48,7 @@ const MusicPage = async (): Promise<React.ReactElement> => {
                     <a
                         href={getSpotifySearchUrl(track.name, track.artists)}
                         target="_blank"
-                        rel="noopener noreferrer"
+                        rel="noopener"
                         key={`${track.name}-${track.artists}-${index}`}
                         className="flex cursor-pointer items-center border-b border-neutral-800 px-4 py-3 transition-colors hover:bg-neutral-800"
                     >

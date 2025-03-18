@@ -21,6 +21,11 @@ const nextConfig: NextConfig = {
                 hostname: "lastfm.freetls.fastly.net",
                 pathname: "/i/u/300x300/**",
             },
+            {
+                protocol: "https",
+                hostname: "image.tmdb.org",
+                pathname: "/t/p/w1280/**",
+            },
         ],
     },
     redirects: async () => {

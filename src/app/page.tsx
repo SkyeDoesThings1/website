@@ -13,6 +13,7 @@ import asuka2 from "@/assets/img/asuka2.gif";
 import aero from "@/assets/img/aero.png";
 import aioi from "@/assets/img/aioi.gif";
 import wifi from "@/assets/img/wifi.gif";
+import Link from "next/link";
 
 const HomePage = (): React.ReactElement => {
     const today = new Date();
@@ -51,17 +52,32 @@ const HomePage = (): React.ReactElement => {
                         ✨ hobbies ✨
                     </h1>
                     <ul className="grid grid-cols-1 gap-4 md:grid-cols-3">
-                        <li className="flex items-center space-x-2 rounded-lg bg-white/10 p-4 backdrop-blur-sm">
-                            <span className="text-2xl">💻</span>
-                            <span>programming</span>
+                        <li>
+                            <Link
+                                href="/projects"
+                                className="flex items-center space-x-2 rounded-lg bg-white/10 p-4 backdrop-blur-sm"
+                            >
+                                <span className="text-2xl">💻</span>
+                                <span>programming</span>
+                            </Link>
                         </li>
-                        <li className="flex items-center space-x-2 rounded-lg bg-white/10 p-4 backdrop-blur-sm">
-                            <span className="text-2xl">🎌</span>
-                            <span>anime</span>
+                        <li>
+                            <Link
+                                href="/about/anime"
+                                className="flex items-center space-x-2 rounded-lg bg-white/10 p-4 backdrop-blur-sm"
+                            >
+                                <span className="text-2xl">🎌</span>
+                                <span>anime</span>
+                            </Link>
                         </li>
-                        <li className="flex items-center space-x-2 rounded-lg bg-white/10 p-4 backdrop-blur-sm">
-                            <span className="text-2xl">🎵</span>
-                            <span>music</span>
+                        <li>
+                            <Link
+                                href="/about/music"
+                                className="flex items-center space-x-2 rounded-lg bg-white/10 p-4 backdrop-blur-sm"
+                            >
+                                <span className="text-2xl">🎵</span>
+                                <span>music</span>
+                            </Link>
                         </li>
                     </ul>
                 </section>
@@ -87,7 +103,7 @@ const HomePage = (): React.ReactElement => {
                             <a
                                 href="https://plasticdino.net/graphics/"
                                 target="_blank"
-                                rel="noopener noreferrer"
+                                rel="noopener"
                                 aria-label="Visit where the badge is from"
                                 className="inline-block hover:m-[-1px] hover:border hover:border-white"
                             >
@@ -106,7 +122,7 @@ const HomePage = (): React.ReactElement => {
                             <a
                                 href="https://plasticdino.net/graphics/"
                                 target="_blank"
-                                rel="noopener noreferrer"
+                                rel="noopener"
                                 aria-label="Visit where the badge is from"
                                 className="inline-block hover:m-[-1px] hover:border hover:border-white"
                             >
@@ -138,7 +154,7 @@ const HomePage = (): React.ReactElement => {
                             <a
                                 href="https://badge.les.bi/"
                                 target="_blank"
-                                rel="noopener noreferrer"
+                                rel="noopener"
                                 aria-label="Visit where the badge is from"
                                 className="inline-block hover:m-[-1px] hover:border hover:border-white"
                             >
@@ -155,7 +171,7 @@ const HomePage = (): React.ReactElement => {
                             <a
                                 href="https://doqmeat.com/"
                                 target="_blank"
-                                rel="noopener noreferrer"
+                                rel="noopener"
                                 aria-label="Visit where the badge is from"
                                 className="inline-block hover:m-[-1px] hover:border hover:border-white"
                             >
@@ -172,7 +188,7 @@ const HomePage = (): React.ReactElement => {
                             <a
                                 href="https://doqmeat.com/"
                                 target="_blank"
-                                rel="noopener noreferrer"
+                                rel="noopener"
                                 aria-label="Visit where the badge is from"
                                 className="inline-block hover:m-[-1px] hover:border hover:border-white"
                             >
@@ -189,7 +205,7 @@ const HomePage = (): React.ReactElement => {
                             <a
                                 href="https://doqmeat.com/"
                                 target="_blank"
-                                rel="noopener noreferrer"
+                                rel="noopener"
                                 aria-label="Visit where the badge is from"
                                 className="inline-block hover:m-[-1px] hover:border hover:border-white"
                             >
@@ -207,7 +223,7 @@ const HomePage = (): React.ReactElement => {
                             <a
                                 href="https://asukalover.neocities.org/"
                                 target="_blank"
-                                rel="noopener noreferrer"
+                                rel="noopener"
                                 aria-label="Visit where the badge is from"
                                 className="inline-block hover:m-[-1px] hover:border hover:border-white"
                             >
@@ -225,7 +241,7 @@ const HomePage = (): React.ReactElement => {
                             <a
                                 href="https://asukalover.neocities.org/"
                                 target="_blank"
-                                rel="noopener noreferrer"
+                                rel="noopener"
                                 aria-label="Visit where the badge is from"
                                 className="inline-block hover:m-[-1px] hover:border hover:border-white"
                             >
@@ -243,7 +259,7 @@ const HomePage = (): React.ReactElement => {
                             <a
                                 href="https://frutigeraeroarchive.org/"
                                 target="_blank"
-                                rel="noopener noreferrer"
+                                rel="noopener"
                                 aria-label="Visit where the badge is from"
                                 className="inline-block hover:m-[-1px] hover:border hover:border-white"
                             >
@@ -260,7 +276,7 @@ const HomePage = (): React.ReactElement => {
                             <a
                                 href="https://aioi.neocities.org/"
                                 target="_blank"
-                                rel="noopener noreferrer"
+                                rel="noopener"
                                 aria-label="Visit where the badge is from"
                                 className="inline-block hover:m-[-1px] hover:border hover:border-white"
                             >
@@ -278,7 +294,7 @@ const HomePage = (): React.ReactElement => {
                             <a
                                 href="https://wi-fi.neocities.org/"
                                 target="_blank"
-                                rel="noopener noreferrer"
+                                rel="noopener"
                                 aria-label="Visit where the badge is from"
                                 className="inline-block hover:m-[-1px] hover:border hover:border-white"
                             >
