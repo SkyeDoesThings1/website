@@ -1,7 +1,8 @@
+import * as React from "react";
 import { env } from "@/env";
 import { AnimatedTitle } from "@/components/AnimatedTitle";
 import { geist } from "@/assets/fonts";
-import { LastFmTrackDisplay } from "./components/LastFmTrack";
+import { LastFmTrackDisplay } from "@/components/LastFmTrack";
 import Image from "next/image";
 
 interface Track {

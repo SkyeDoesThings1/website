@@ -1,6 +1,7 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import * as React from "react";
+import { useState, useEffect } from "react";
 import { geist } from "@/assets/fonts";
 import Image from "next/image";
 import empty from "@/assets/img/empty.png";

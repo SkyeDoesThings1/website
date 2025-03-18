@@ -1,3 +1,4 @@
+import * as React from "react";
 import { AnimatedTitle } from "@/components/AnimatedTitle";
 import { ViewCount } from "@/components/ViewCount";
 import Image from "next/image";

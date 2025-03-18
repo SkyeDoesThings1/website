@@ -1,3 +1,4 @@
+import * as React from "react";
 import { AnimatedTitle } from "@/components/AnimatedTitle";
 import Image from "next/image";
 import Link from "next/link";

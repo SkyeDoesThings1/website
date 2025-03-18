@@ -1,12 +1,16 @@
 "use client";
 
+import { usePlausible } from "next-plausible";
 import { useQuery } from "@tanstack/react-query";
 import { geist } from "@/assets/fonts";
 
 export const ViewCount = (): React.ReactElement => {
+    const plausible = usePlausible();
+
     const { data, isLoading } = useQuery({
         queryKey: ["views"],
         queryFn: async () => {
+            plausible("pageView");
             const response = await fetch("/api/views", {
                 method: "GET",
             });
@@ -22,7 +26,7 @@ export const ViewCount = (): React.ReactElement => {
                 <span
                     className={`${geist.className} font-medium text-green-400`}
                 >
-                    {isLoading ? "Loading..." : (data?.views ?? 5)}
+                    {isLoading ? "Loading..." : (data?.views ?? 0)}
                 </span>
             </div>
         </section>

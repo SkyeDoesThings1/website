@@ -1,3 +1,5 @@
+import * as React from "react";
+
 const SpinMiiPage = (): React.ReactElement => {
     return (
         <div className="space-y-12">

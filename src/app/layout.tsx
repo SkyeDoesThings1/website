@@ -1,3 +1,4 @@
+import * as React from "react";
 import { fredoka } from "@/assets/fonts";
 import { Providers } from "@/components/Providers";
 import { TopBar } from "@/components/TopBar";
