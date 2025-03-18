@@ -1,10 +1,20 @@
 import * as React from "react";
+import { AnimatedTitle } from "@/components/AnimatedTitle";
 
 const ChatPage = (): React.ReactElement => {
     return (
-        <div className="space-y-12">
-            <h1 className="text-2xl">Not done !!</h1>
-        </div>
+        <>
+            <AnimatedTitle subtitle="chat room" />
+            <div className="space-y-8">
+                <section className="space-y-6 text-center">
+                    <h1 className="glitter-text text-4xl font-bold">
+                        ⋆｡°✩ chat room ✩°｡⋆
+                    </h1>
+                </section>
+
+                <section></section>
+            </div>
+        </>
     );
 };
 

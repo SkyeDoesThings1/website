@@ -17,6 +17,7 @@
         "@vercel/analytics": "^1.5.0",
         "autoprefixer": "^10.4.20",
         "babel-plugin-react-compiler": "^19.0.0-beta-40c6c23-20250301",
+        "isbot": "^5.1.25",
         "next": "15.2.1",
         "next-plausible": "^3.12.4",
         "react": "^19.0.0",

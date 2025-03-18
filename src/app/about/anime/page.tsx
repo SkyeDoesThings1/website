@@ -29,7 +29,7 @@ const AnimeList = [
 const AnimePage = (): React.ReactElement => {
     return (
         <>
-            <AnimatedTitle subtitle="about" />
+            <AnimatedTitle subtitle="anime" />
             <div className="space-y-12">
                 <section className="space-y-6 text-center">
                     <h1 className="glitter-text text-4xl font-bold">
