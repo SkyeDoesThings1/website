@@ -112,7 +112,7 @@ const HomePage = (): React.ReactElement => {
                                     alt="MIKUUUUU"
                                     width={88}
                                     height={31}
-                                    className="border border-gray-300 shadow-md"
+                                    className="border shadow-md"
                                     unoptimized
                                     priority
                                 />
@@ -131,7 +131,7 @@ const HomePage = (): React.ReactElement => {
                                     alt="MIKUUUUU"
                                     width={88}
                                     height={31}
-                                    className="border border-gray-300 shadow-md"
+                                    className="border shadow-md"
                                     unoptimized
                                 />
                             </a>
@@ -146,7 +146,7 @@ const HomePage = (): React.ReactElement => {
                                     alt="optimized for any browser !!"
                                     width={88}
                                     height={31}
-                                    className="border border-gray-300 shadow-md"
+                                    className="border shadow-md"
                                 />
                             </a>
                         </li>
@@ -163,7 +163,7 @@ const HomePage = (): React.ReactElement => {
                                     alt="my fag flags"
                                     width={88}
                                     height={31}
-                                    className="border border-gray-300 shadow-md"
+                                    className="border shadow-md"
                                 />
                             </a>
                         </li>
@@ -180,7 +180,7 @@ const HomePage = (): React.ReactElement => {
                                     alt="TRANS RIGHTS !!!!!!"
                                     width={88}
                                     height={31}
-                                    className="border border-gray-300 shadow-md"
+                                    className="border shadow-md"
                                 />
                             </a>
                         </li>
@@ -197,7 +197,7 @@ const HomePage = (): React.ReactElement => {
                                     alt="kill the nazis"
                                     width={88}
                                     height={31}
-                                    className="border border-gray-300 shadow-md"
+                                    className="border shadow-md"
                                 />
                             </a>
                         </li>
@@ -214,7 +214,7 @@ const HomePage = (): React.ReactElement => {
                                     alt="image and video ai sucks !!"
                                     width={88}
                                     height={31}
-                                    className="border border-gray-300 shadow-md"
+                                    className="border shadow-md"
                                     unoptimized
                                 />
                             </a>
@@ -232,7 +232,7 @@ const HomePage = (): React.ReactElement => {
                                     alt="asuka my queen"
                                     width={88}
                                     height={31}
-                                    className="border border-gray-300 shadow-md"
+                                    className="border shadow-md"
                                     unoptimized
                                 />
                             </a>
@@ -250,7 +250,7 @@ const HomePage = (): React.ReactElement => {
                                     alt="asuka my queen"
                                     width={88}
                                     height={31}
-                                    className="border border-gray-300 shadow-md"
+                                    className="border shadow-md"
                                     unoptimized
                                 />
                             </a>
@@ -268,7 +268,7 @@ const HomePage = (): React.ReactElement => {
                                     alt="frutiger aero archive"
                                     width={88}
                                     height={31}
-                                    className="border border-gray-300 shadow-md"
+                                    className="border shadow-md"
                                 />
                             </a>
                         </li>
@@ -285,7 +285,7 @@ const HomePage = (): React.ReactElement => {
                                     alt="frutiger aero archive"
                                     width={88}
                                     height={31}
-                                    className="border border-gray-300 shadow-md"
+                                    className="border shadow-md"
                                     unoptimized
                                 />
                             </a>
@@ -303,7 +303,7 @@ const HomePage = (): React.ReactElement => {
                                     alt="frutiger aero archive"
                                     width={88}
                                     height={31}
-                                    className="border border-gray-300 shadow-md"
+                                    className="border shadow-md"
                                     unoptimized
                                 />
                             </a>
